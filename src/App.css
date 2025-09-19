@@ -1,0 +1,27 @@
+:root{
+--bg:#f7f7fb;
+--card:#ffffff;
+--muted:#6b7280;
+--primary:#0b5fff;
+--danger:#e11d48;
+}
+
+
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); margin:0; padding:24px;}
+.app{max-width:720px;margin:24px auto;padding:20px;background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+header h1{margin:0;font-size:20px}
+.muted{color:var(--muted)}
+.add-form{display:flex;gap:8px;margin-top:16px}
+.add-form input{flex:1;padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+.add-form button{padding:10px 14px;border-radius:8px;border:none;background:var(--primary);color:#fff}
+.list{margin-top:18px}
+.todo{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;border:1px solid #eef0f6;margin-top:8px}
+.todo .left{display:flex;gap:12px;align-items:center}
+.todo .content .text{font-weight:500; padding: 10px;}
+.todo.done .text{text-decoration:line-through;opacity:0.7}
+.todo .actions button{margin-left:8px;padding:6px 10px;border-radius:8px;border:1px solid #e6e9ef;background:#fff}
+.todo .actions .danger{border-color:transparent;background:var(--danger);color:#fff}
+.edit-form{display:flex;gap:8px;align-items:center}
+.edit-actions button{margin-left:6px}
+footer{margin-top:18px;text-align:center}
